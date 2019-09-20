@@ -18,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
         //in so le
         //inSoLe();
         //in so chia 3 du 1
-        insoChi3du1();
+        //insoChi3du1();
+        inso(1,3);
     }
     // Thường đc tạo trong class
     // 1: Access modifier : phạm vi truy cập
@@ -26,6 +27,16 @@ public class MainActivity extends AppCompatActivity {
         //private :tạo ở đâu thì dùng ở đó
     // 2: Giá trị trả về
     // 3: Tên phương thức :
+    private void inso(int sodu,int sochia){
+        for (int i=0;i<=100;i++){
+            if(i==0){
+                continue;
+            }
+            else if(i%sochia==sodu){
+                Log.d("DDD",i+ " ");
+            }
+        }
+    }
     private Integer tinhTong(int a,int b){
         int tong= a + b;
         return tong;
