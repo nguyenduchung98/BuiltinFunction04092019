@@ -11,64 +11,31 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        // method == phương thức
-        // Giả quyết vấn đè lặp code
-        //in so chan
-        //inSoChan();
-        //in so le
-        //inSoLe();
-        //in so chia 3 du 1
-        //insoChi3du1();
-        inso(1,3);
+//    double value =Math.random() * 5;
+//    Log.d("DDD",value +"");
+        //lam tron giá tri
+       // Math.floor(): làm tròn xuong
+        //Math.ceil() : làm tron lên
+        //Math.round(): <5 làm ròn xuống,>5 làm tròn len
+
+        //double number =Math.floor(4.9999);
+//        double value =Math.floor(Math.random() * 5 + 1);
+//        double number1 =Math.floor(4.9999);
+//        double number2 =Math.ceil(4.9999);
+//        double number3 =Math.round(4.6);
+//        Log.d("DDD",value +"");
+        //so chính phương
+
+        double number4= Math.sqrt(5);
+    ktSochinhphuong(6);
+
     }
-    // Thường đc tạo trong class
-    // 1: Access modifier : phạm vi truy cập
-        // public : ở đâu cung thấy đc
-        //private :tạo ở đâu thì dùng ở đó
-    // 2: Giá trị trả về
-    // 3: Tên phương thức :
-    private void inso(int sodu,int sochia){
-        for (int i=0;i<=100;i++){
-            if(i==0){
-                continue;
-            }
-            else if(i%sochia==sodu){
-                Log.d("DDD",i+ " ");
-            }
+    private void ktSochinhphuong(double value){
+        if(Math.sqrt(value) %  1 == 0){
+            Log.d("DDD","day la so chinh phuong");
         }
-    }
-    private Integer tinhTong(int a,int b){
-        int tong= a + b;
-        return tong;
-    }
-    private void inSoChan(){
-        for (int i=0;i<=100;i++){
-            if(i==0){
-                continue;
-            }
-            else if(i%2==0){
-                Log.d("DDD",i+ " ");
-            }
-        }
-    }
-    private void inSoLe(){
-        for (int i=0;i<=100;i++){
-            if(i==0){
-                continue;
-            }
-            else if(i%2!=0){
-                Log.d("DDD",i+ " ");
-            }
-        }
-    }
-    private void insoChi3du1(){
-        for (int i=0;i<=100;i++){
-            if(i==0){
-                continue;
-            }
-            else if(i%3==1){
-                Log.d("DDD",i+ " ");
-            }
+        else {
+            Log.d("DDD","day la ko phai so chinh phuong");
         }
     }
 }
