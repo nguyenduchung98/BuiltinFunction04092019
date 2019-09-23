@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
             Log.d("DDD","day la so chinh phuong");
         }
         else {
-            Log.d("DDD","day la ko phai so chinh phuong");
+            Log.d("DDD","day la ko phai so chinh phuong")
         }
     }
 }
